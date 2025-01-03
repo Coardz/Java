@@ -1,0 +1,42 @@
+Card List
+
+
+Scoring System
+
+this is array of all cards
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, J, Q, K A]
+
+index representation
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 
+
+if (i == 12 || i == 13 || i == 14 || i == 15){
+    add++;
+}
+
+
+
+J Q K A equals to 1
+
+
+
+\\ this makes the score not go over 10 because the game after all is lucky 9
+if (score >= 10){
+    this.score = this.score - 10
+}
+
+Each Player Draw 2 Card
+
+for example 
+7 + 2 = 9
+9 + 1 = 0
+
+now the draw 1 mechanics
+
+for example
+
+the player already got 9 + 1 which is total to 10 which is 0
+the player want to get another score he draw a card which is 9 not he got 9
+
+visual representation
+
+9 + 1 + 9 = 9
